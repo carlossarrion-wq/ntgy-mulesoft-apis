@@ -1,5 +1,21 @@
 ---
 api: "ntgy-newco-s-dynamodb"
+sidebar_position: 37
+sidebar_label: "GET /MovimientoDeudaOnline"
+description: "Recupera información de movimiento de deuda online por leaseKey desde DynamoDB para gestión de traspasos de deuda"
+keywords: [MovimientoDeudaOnline, deuda, traspaso, leaseKey, DynamoDB, System API, Naturgy]
+tags: [Movimiento Deuda, Sincronización, System API, DynamoDB]
+database_type: DynamoDB
+sql_metadata:
+  data_sources:
+    - database: "DynamoDB"
+      schema: "ntgy-dydb"
+      type: "NoSQL"
+      tables:
+        - name: "ntgy-dydb-sync-sap"
+          operations: ["READ"]
+          description: "Tabla de sincronización SAP que almacena movimientos de deuda online"
+---
 
 # GET /MovimientoDeudaOnline
 

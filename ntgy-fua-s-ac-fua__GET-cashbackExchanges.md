@@ -1,5 +1,20 @@
 ---
 api: "ntgy-fua-s-ac-fua"
+sidebar_position: 42
+sidebar_label: "GET /cashbackExchanges"
+description: "Consulta el historial de canjes de cashback realizados por un cliente en el programa de fidelización de Naturgy"
+keywords: [cashback, canjes, exchanges, fidelización, promociones, tarjeta naturgy, descuentos, cliente, historial]
+tags: [Cashback, Fidelización, System API, PostgreSQL, Consultas]
+sql_metadata:
+  data_sources:
+    - database: "PostgreSQL"
+      schema: "public"
+      type: "PostgreSQL"
+      tables:
+        - name: "V_FUA_CASHBACK_EXCHANGES"
+          operations: ["READ"]
+          description: "Vista consolidada de canjes de cashback con información de direcciones asociadas"
+---
 
 # GET /cashbackExchanges
 
